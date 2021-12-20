@@ -115,10 +115,10 @@ function trigFunc(value) {
             input.value = tagInp;
             console.log("tag:" + tagInp);
             break;   
-        case "ctg":
-            var ctgInp = 1/Math.tan(input.value);
-            input.value = ctgInp;
-            console.log("ctg:" + ctgInp);
+        case "cot":
+            var cotInp = 1/Math.tan(input.value);
+            input.value = cotInp;
+            console.log("cot:" + cotInp);
             break;         
     }
 }

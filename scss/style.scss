@@ -1,5 +1,6 @@
 @import 'reset';
 @import 'variable';
+@import 'media';
 
 * {
     margin: 0;
@@ -29,6 +30,10 @@ html {
             justify-content: center;
             // align-items: center;
             flex-direction: column;
+
+            @include phone {
+                padding: 5px;
+            }
 
             .inputNumber {
                 display: flex;
@@ -63,6 +68,18 @@ html {
                 margin: 5px;
                 font-family: $font-numbers;
                 font-size: 1rem;
+
+                @include tablet {
+                    height: 25px;
+                    width: 50px;
+                    font-size: 0.8rem;
+                }
+
+                @include phone {
+                    height: 15px;
+                    width: 40px;
+                    font-size: 0.5rem;
+                }
             }
 
             .numbers {
