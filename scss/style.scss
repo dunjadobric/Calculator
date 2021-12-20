@@ -43,6 +43,14 @@ html {
                 }
             }
 
+            .eqBtn {
+                background-color: $color-numbers;
+                color: $bcg-color-btn;
+                border: 1px solid $color-numbers;
+                border-radius: 2.5px;
+                font-weight: bold;
+            }
+
             input {
                 background-color: $bcg-color-btn;
                 border: 1px solid $bcg-color-btn;
@@ -61,6 +69,11 @@ html {
                 display: flex;
                 justify-content: flex-start;
                 flex-direction: column;
+
+                .inputNumbers {
+                    background-color: $bcg-color-numbers;
+                    border: 1px solid $bcg-color-numbers;
+                }
             }
         }
     }

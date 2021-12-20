@@ -63,13 +63,6 @@ function clrFunc() {
     input.value = "";
 }
 
-//round number function
-function rndFunc() {
-    var rndInp = Math.round(input.value);
-    console.log(rndInp);
-    input.value = rndInp;
-}
-
 //square function
 function sqrFunc() {
     var sqrInp = Math.sqrt(input.value);
@@ -84,9 +77,48 @@ function powFunc() {
     input.value = powInp;
 }
 
+//round number function
+function rndFunc() {
+    var rndInp = Math.round(input.value);
+    console.log(rndInp);
+    input.value = rndInp;
+}
+
+//log function
+function logFunc() {
+    var logInp = Math.log(input.value);
+    console.log(logInp);
+    input.value = logInp;
+}
+
 //unary prefix
 function unaryFunc() {
     var unaryInp = -input.value;
     console.log(unaryInp);
     input.value = unaryInp;
+}
+
+function trigFunc(value) {
+    switch(value) {
+        case "sin":
+            var sinInp = Math.sin(input.value);
+            input.value = sinInp;
+            console.log("sin:" + sinInp);
+            break;
+        case "cos":
+            var cosInp = Math.cos(input.value);
+            input.value = cosInp;
+            console.log("cos:" + cosInp);
+            break;  
+        case "tan":
+            var tagInp = Math.tan(input.value);
+            input.value = tagInp;
+            console.log("tag:" + tagInp);
+            break;   
+        case "ctg":
+            var ctgInp = 1/Math.tan(input.value);
+            input.value = ctgInp;
+            console.log("ctg:" + ctgInp);
+            break;         
+    }
 }

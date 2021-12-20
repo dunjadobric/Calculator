@@ -17,53 +17,77 @@
         <div class="inputNumber">
             <input class="input" placeholder="0" disabled="true" id="input">
         </div>
+        <div>
+            <!-- square -->
+            <input type="button" value="&#8730;" id="sqr" onclick="sqrFunc()">
+
+            <!-- pow on two -->
+            <input type="button" value="x ²" id="pow" onclick="powFunc()">
+
+            <!-- Math.PI -->
+            <input type="button" value="&#8508;" id="pi" onclick="numFunc('3.14159265359')">
+
+            <!--Euler Number-->
+            <input type="button" value="e" onclick="numFunc('2.718281828459045')">
+
+            <input type="button" value="=" id="eqBtn" class="eqBtn" onclick="numFunc('=')">
+        </div>
+
         <div class="buttonsSimple">
             <input type="button" value="+" id="addBtn" onclick="numFunc(' + ')">
             <input type="button" value="-" id="subBtn" onclick="numFunc(' - ')">
             <input type="button" value="*" id="multBtn" onclick="numFunc(' * ')">
             <input type="button" value="/" id="dvdBtn" onclick="numFunc(' / ')">
-            <input type="button" value="=" id="eqBtn" onclick="numFunc('=')">
-        </div>
-        <div>
-            <!-- square -->
-            <input type="button" value="&#8730;" id="sqr" onclick="sqrFunc()">
-
-            <!-- Math.PI -->
-            <input type="button" value="&#8508;" id="pi" onclick="numFunc('3.14159265359')">
-
-            <!-- pow on two -->
-            <input type="button" value="x ²" id="pow" onclick="powFunc()">
-
-            <!-- returns the value of a number rounded to the nearest integer Math.round() -->
-            <input type="button" value="Round" id="rnd" onclick="rndFunc()">
 
             <!-- clear input field -->
-            <input type="button" value="Clear" id="clr" onclick="clrFunc()">
+            <input type="button" value="CLEAR" id="clr" onclick="clrFunc()">
+            
         </div>
+
         <div class="numbers">
             <div class="numbersRow">
-                <input type="button" value="7" id="7" onclick="numFunc(7)">
-                <input type="button" value="8" id="8" onclick="numFunc(8)">
-                <input type="button" value="9" id="9" onclick="numFunc(9)">
+                <input type="button" class="inputNumbers" value="7" id="7" onclick="numFunc(7)">
+                <input type="button" class="inputNumbers" value="8" id="8" onclick="numFunc(8)">
+                <input type="button" class="inputNumbers" value="9" id="9" onclick="numFunc(9)">
+
+                <!-- returns the value of a number rounded to the nearest integer Math.round() -->
+                <input type="button" value="round" id="rnd" onclick="rndFunc()">
+
+                <input type="button" value="ln" onclick="logFunc()">
+
             </div>
+
             <div class="numbersRow">
-                <input type="button" value="4" id="4" onclick="numFunc(4)">
-                <input type="button" value="5" id="5" onclick="numFunc(5)">
-                <input type="button" value="6" id="6" onclick="numFunc(6)">
+                <input type="button" class="inputNumbers" value="4" id="4" onclick="numFunc(4)">
+                <input type="button" class="inputNumbers" value="5" id="5" onclick="numFunc(5)">
+                <input type="button" class="inputNumbers" value="6" id="6" onclick="numFunc(6)">
+
+                <input type="button" value="ln(2)" onclick="numFunc('0.6931471805599453')">
+
+                <input type="button" value="ln(10)" onclick="numFunc('2.302585092994046')">
+
             </div>
+
             <div class="numbersRow">
-                <input type="button" value="1" id="1" onclick="numFunc(1)">
-                <input type="button" value="2" id="2" onclick="numFunc(2)">
-                <input type="button" value="3" id="3" onclick="numFunc(3)">
+                <input type="button" class="inputNumbers" value="1" id="1" onclick="numFunc(1)">
+                <input type="button" class="inputNumbers" value="2" id="2" onclick="numFunc(2)">
+                <input type="button" class="inputNumbers" value="3" id="3" onclick="numFunc(3)">
+
+                <input type="button" value="sin" onclick="trigFunc('sin')">
+                <input type="button" value="cos" onclick="trigFunc('cos')">
             </div>
+
             <div class="numbersRow">
                 <!-- prefix, Unary negation -->
-                <input type="button" value="&#177;" id="unary" onclick="unaryFunc()">
+                <input type="button" class="inputNumbers" value="&#177;" id="unary" onclick="unaryFunc()">
 
-                <input type="button" value="0" id="num0" onclick="numFunc(0)">
+                <input type="button" class="inputNumbers" value="0" id="num0" onclick="numFunc(0)">
 
                 <!-- dot -->
-                <input type="button" value="." id="dot" onclick="numFunc('.')">
+                <input type="button" class="inputNumbers" value="." id="dot" onclick="numFunc('.')">
+
+                <input type="button" value="tan" onclick="trigFunc('tan')">
+                <input type="button" value="ctg" onclick="trigFunc('ctg')">
             </div>
         </div>
     </div>

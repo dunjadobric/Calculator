@@ -78,6 +78,12 @@ html {
           border: 1px solid #fff;
           border-radius: 2.5px;
           color: #4d6563; }
+      html body .main .eqBtn {
+        background-color: #fff;
+        color: #4d6563;
+        border: 1px solid #fff;
+        border-radius: 2.5px;
+        font-weight: bold; }
       html body .main input {
         background-color: #4d6563;
         border: 1px solid #4d6563;
@@ -94,5 +100,8 @@ html {
         display: flex;
         justify-content: flex-start;
         flex-direction: column; }
+        html body .main .numbers .inputNumbers {
+          background-color: #687d7b;
+          border: 1px solid #687d7b; }
 
 /*# sourceMappingURL=style.css.map */
